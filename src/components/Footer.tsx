@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-orange-400 mt-1" />
-                <p className="text-gray-300 text-sm">Brampton, Ontario, Canada</p>
+                <p className="text-gray-300 text-sm">Upper highlands dr, Brampton</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-orange-400" />
@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-orange-400" />
-                <p className="text-gray-300 text-sm">info@bhujhangjatha.com</p>
+                <p className="text-gray-300 text-sm">Jassj7166@gmail.com</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Instagram className="w-4 h-4 text-orange-400" />
