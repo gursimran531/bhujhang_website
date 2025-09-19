@@ -86,7 +86,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="text-center mb-6">
             <h4 className="text-lg font-semibold mb-4 text-orange-400">Follow Us</h4>
-            <div className="flex justify-center space-x-6">
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
               <a
                 href="https://www.youtube.com/@bhujhangjathanawanshahr4991"
                 target="_blank"
@@ -95,6 +95,24 @@ const Footer = () => {
               >
                 <Youtube className="w-6 h-6" />
                 <span>YouTube Channel</span>
+              </a>
+              <a
+                href="https://www.instagram.com/bhujhang_jatha_nawanshahr_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-300 hover:text-pink-400 transition-colors"
+              >
+                <Instagram className="w-6 h-6" />
+                <span>Nawanshahr Instagram</span>
+              </a>
+              <a
+                href="https://www.instagram.com/bhujhang_jatha_brampton/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-300 hover:text-pink-400 transition-colors"
+              >
+                <Instagram className="w-6 h-6" />
+                <span>Brampton Instagram</span>
               </a>
             </div>
           </div>
