@@ -46,39 +46,30 @@ const Gallery = () => {
       date: '2024-03-20'
     },
     {
-      description: 'Community gathering for spiritual celebration',
+      id: 4,
       type: 'image',
       category: 'gatka',
-      src: 'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Youth Gatka Class',
-      description: 'Traditional martial arts training session',
-      location: 'Brampton, Canada',
+      src: '/4.jpg',
+      title: 'Gatka Warriors Assembly',
+      description: 'Members with traditional weapons and attire',
+      location: 'Nawanshahr, India',
       date: '2024-02-10'
-      src: 'https://images.pexels.com/photos/7034274/pexels-photo-7034274.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
     {
-      description: 'Traditional martial arts training session',
+      id: 5,
       type: 'image',
       category: 'ceremonies',
-      src: '/4.jpg'',
-      title: 'Spiritual Ceremony',
-      description: 'Master demonstrating traditional Gatka sword techniques',
+      src: '/5.jpg',
+      title: 'Group Formation',
+      description: 'Complete team in traditional blue uniforms',
       location: 'Nawanshahr, India',
       date: '2024-01-26'
-    {
-      description: 'Traditional religious gathering with community',
-      type: 'image',
-      category: 'ceremonies',
-      src: '/3.jpg',
-      title: 'Team Unity',
-      description: 'Bhujhang Jatha members showcasing unity and tradition',
-      location: 'Nawanshahr, India',
-      date: '2024-03-05'
     }
   ];
 
   const filteredItems = selectedCategory === 'all' 
     ? mediaItems 
-      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
+    : mediaItems.filter(item => item.category === selectedCategory);
 
   return (
     <div className="min-h-screen py-12 text-white relative">
