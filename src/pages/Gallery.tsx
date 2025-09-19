@@ -60,7 +60,17 @@ const Gallery = () => {
       type: 'image',
       category: 'jathedar',
       src: '/1.jpg',
-      title: 'Traditional Gatka Training',
+      title: 'Jathedar',
+      description: 'Jathedar Jaspreet Singh and Jathedar Gursimarpreet Singh',
+      location: 'Nawanshahr, India',
+      date: '2024-01-15'
+    },
+    {
+      id: 6,
+      type: 'image',
+      category: 'jathedar',
+      src: '/5.jpg',
+      title: 'Jathedar',
       description: 'Jathedar Jaspreet Singh and Jathedar Gursimarpreet Singh',
       location: 'Nawanshahr, India',
       date: '2024-01-15'
