@@ -54,6 +54,16 @@ const Gallery = () => {
       description: 'Traditional martial arts training session',
       location: 'Brampton, Canada',
       date: '2024-06-10'
+    },
+    {
+      id: 5,
+      type: 'image',
+      category: 'gatka',
+      src: '/3.jpg',
+      title: 'Traditional Gatka Training',
+      description: 'Master demonstrating traditional Gatka sword techniques',
+      location: 'Nawanshahr, India',
+      date: '2024-01-15'
     }
   ];
 
