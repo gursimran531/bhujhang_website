@@ -82,6 +82,9 @@ const About = () => {
                 <div className="w-2 h-2 bg-gray-900 rounded-full"></div>
                 <span className="text-gray-900">Mental discipline and focus</span>
               </div>
+                <a href="https://www.instagram.com/bhujhang_jatha_nawanshahr_/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-sm transition-all duration-300 hover:translate-x-2">
+                <div className="w-2 h-2 bg-gray-900 rounded-full"></div>
+                <span className="text-gray-900">Spiritual connection to Sikh values</span>
               </div>
             </div>
           </div>
@@ -95,7 +98,7 @@ const About = () => {
               <div key={index} className="text-center">
                 <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   {value.icon}
-                </div>
+                <a href="https://www.instagram.com/bhujhang_jatha_brampton/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-sm transition-all duration-300 hover:translate-x-2">
                 <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
                 <p className="text-white">{value.description}</p>
               </div>
@@ -104,30 +107,7 @@ const About = () => {
         </div>
 
         {/* Mission & Vision */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-orange-600 to-orange-700 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
-            <p className="text-white">
-              To preserve, promote, and teach traditional Sikh martial arts while fostering a strong sense 
-              of community, cultural identity, and spiritual growth among Sikhs worldwide. We are committed 
-              to maintaining the authentic practices of Gatka while adapting to serve our global community.
-            </p>
-          </div>
-          <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
-            <p className="text-gray-900">
-              To be the leading organization in preserving Sikh martial arts heritage, creating a global 
-              network of practitioners who embody the warrior spirit of the Khalsa while contributing 
-              positively to their communities and maintaining strong connections to their Sikh identity.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default About;
+        {/* Achievements Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-white text-center mb-12">Our Achievements</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -160,3 +140,33 @@ export default About;
             </div>
           </div>
         </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                className="social-link hover:text-pink-400"
+            <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
+            <p className="text-white">
+              To preserve, promote, and teach traditional Sikh martial arts while fostering a strong sense 
+              of community, cultural identity, and spiritual growth among Sikhs worldwide. We are committed 
+              to maintaining the authentic practices of Gatka while adapting to serve our global community.
+            </p>
+          </div>
+                className="social-link hover:text-red-400"
+                className="social-link hover:text-pink-400"
+            <p className="text-gray-900">
+              To be the leading organization in preserving Sikh martial arts heritage, creating a global 
+              network of practitioners who embody the warrior spirit of the Khalsa while contributing 
+              positively to their communities and maintaining strong connections to their Sikh identity.
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+    )
+    }
+    </div>
+  );
+};
+
+export default About;
+  )
+}
