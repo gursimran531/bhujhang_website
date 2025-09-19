@@ -109,7 +109,7 @@ const Home = () => {
                   <span className="text-white text-2xl font-bold">IN</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Nawanshahr, Punjab</h3>
-                <p className="text-orange-600 font-semibold mb-4">भुजंग जत्था</p>
+                <p className="text-orange-600 font-semibold mb-4">ਭੁਜੰਗ ਜੱਥਾ</p>
                 <p className="text-gray-700 mb-6">
                   Our founding location in the heart of Punjab, where traditional Gatka and Sikh martial arts have been practiced for generations.
                 </p>
