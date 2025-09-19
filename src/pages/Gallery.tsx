@@ -59,9 +59,9 @@ const Gallery = () => {
       id: 5,
       type: 'image',
       category: 'ceremonies',
-      src: 'https://images.pexels.com/photos/6394567/pexels-photo-6394567.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/4.jpg',
       title: 'Spiritual Ceremony',
-      description: 'Traditional religious gathering with community',
+      description: 'Master demonstrating traditional Gatka sword techniques',
       location: 'Nawanshahr, India',
       date: '2024-01-26'
     },
@@ -69,9 +69,9 @@ const Gallery = () => {
       id: 6,
       type: 'image',
       category: 'ceremonies',
-      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/3.jpg',
       title: 'Team Unity',
-      description: 'Community gathering for spiritual celebration',
+      description: 'Bhujhang Jatha members showcasing unity and tradition',
       location: 'Nawanshahr, India',
       date: '2024-03-05'
     }
