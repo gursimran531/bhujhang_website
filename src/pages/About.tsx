@@ -9,7 +9,7 @@ const About = () => {
       description: "Preserving authentic Sikh martial arts as passed down through generations."
     },
     {
-      icon: <Heart className="w-8 h-8 text-yellow-500" />,
+      icon: <span className="text-2xl">🙏</span>,
       title: "Devotion",
       description: "Serving the Sikh community with dedication and spiritual commitment."
     },
