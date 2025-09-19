@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-orange-400 mt-1" />
-                <p className="text-gray-300 text-sm">Gurdwara manji sahib patshahi 9ve, Banga Road, Nawanshahr, Punjab</p>
+                <p className="text-gray-300 text-sm">Gurdwara Manji Sahib Patshahi 9ve, Banga Road, Nawanshahr, Punjab</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-orange-400" />
@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-orange-400 mt-1" />
-                <p className="text-gray-300 text-sm">Upper highlands dr, Brampton</p>
+                <p className="text-gray-300 text-sm">Upper Highlands Drive, Brampton</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-orange-400" />
