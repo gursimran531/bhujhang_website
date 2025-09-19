@@ -107,6 +107,40 @@ const About = () => {
         </div>
 
         {/* Mission & Vision */}
+        {/* Achievements Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white text-center mb-12">Our Achievements</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 p-6 rounded-lg text-center">
+              <div className="text-4xl mb-3">🥇</div>
+              <h4 className="font-bold text-gray-900 mb-2">Gold Medal</h4>
+              <p className="text-gray-900 text-sm mb-1">Guru Ramdas Sewa Society</p>
+              <p className="text-gray-800 text-xs">Nawanshahr • May 14, 2022</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-orange-400 to-orange-500 p-6 rounded-lg text-center">
+              <div className="text-4xl mb-3">🏆</div>
+              <h4 className="font-bold text-white mb-2">First Position</h4>
+              <p className="text-white text-sm mb-1">Sujjon Gatka Cup</p>
+              <p className="text-orange-100 text-xs">2022</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-gray-400 to-gray-500 p-6 rounded-lg text-center">
+              <div className="text-4xl mb-3">🥈</div>
+              <h4 className="font-bold text-white mb-2">Second Position</h4>
+              <p className="text-white text-sm mb-1">Gatka Cup</p>
+              <p className="text-gray-200 text-xs">2023</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-orange-400 to-orange-500 p-6 rounded-lg text-center">
+              <div className="text-4xl mb-3">🏆</div>
+              <h4 className="font-bold text-white mb-2">First Position</h4>
+              <p className="text-white text-sm mb-1">Gatka Cup Rudki</p>
+              <p className="text-orange-100 text-xs">2022</p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-blue-900 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
