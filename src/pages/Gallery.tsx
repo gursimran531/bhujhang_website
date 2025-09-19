@@ -8,7 +8,7 @@ const Gallery = () => {
   const categories = [
     { id: 'all', label: 'All' },
     { id: 'gatka', label: 'Gatka Training' },
-    { id: 'events', label: 'Cultural Events' },
+    { id: 'events', label: 'Bhujhangi Team' },
     { id: 'kirtan', label: 'Nagar Kirtan' },
     { id: 'jathedar', label: 'Jathedar' }
   ];
@@ -18,7 +18,7 @@ const Gallery = () => {
     {
       id: 1,
       type: 'image',
-      category: 'gatka',
+      category: 'events',
       src: '/8.jpg',
       title: 'Traditional Gatka Training',
       description: 'Master demonstrating traditional Gatka sword techniques',
@@ -38,7 +38,7 @@ const Gallery = () => {
     {
       id: 3,
       type: 'image',
-      category: 'kirtan',
+      category: 'events',
       src: '/3.jpg',
       title: 'Nagar Kirtan Procession',
       description: 'Community gathering for spiritual celebration',
@@ -48,7 +48,7 @@ const Gallery = () => {
     {
       id: 4,
       type: 'image',
-      category: 'gatka',
+      category: 'events',
       src: '/4.jpg',
       title: 'Youth Gatka Class',
       description: 'Traditional martial arts training session',
