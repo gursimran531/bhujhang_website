@@ -85,3 +85,11 @@ body {
   position: relative;
   z-index: 2;
 }
+
+/* Hero background image */
+.hero-background {
+  background-image: url('/background pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
