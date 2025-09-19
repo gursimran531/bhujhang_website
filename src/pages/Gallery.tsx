@@ -38,10 +38,10 @@ const Gallery = () => {
     {
       id: 3,
       type: 'image',
-      category: 'events',
+      category: 'gatka',
       src: '/3.jpg',
-      title: 'Nagar Kirtan Procession',
-      description: 'Community gathering for spiritual celebration',
+      title: 'Gatka Team',
+      description: 'Bhujhan Jatha Gatka Team',
       location: 'Nawanshahr, India',
       date: '2024-03-20'
     },
