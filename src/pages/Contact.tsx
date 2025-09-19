@@ -122,7 +122,7 @@ const Contact = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">
                       Phone Number
                     </label>
                     <input
@@ -131,12 +131,12 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                     className="form-input-dark"
+                      className="form-input-dark"
                       placeholder="Your phone number"
                     />
                   </div>
                   <div>
-                   <label htmlFor="branch" className="block text-sm font-medium text-gray-300 mb-1">
+                    <label htmlFor="branch" className="block text-sm font-medium text-gray-300 mb-1">
                       Preferred Branch
                     </label>
                     <select
@@ -144,7 +144,7 @@ const Contact = () => {
                       name="branch"
                       value={formData.branch}
                       onChange={handleChange}
-                     className="form-select-dark"
+                      className="form-select-dark"
                     >
                       <option value="">Select a branch</option>
                       <option value="nawanshahr">Nawanshahr, India</option>
@@ -259,7 +259,6 @@ const Contact = () => {
               <div className="space-y-2 text-sm text-gray-600">
                 <p>• Email inquiries: Within 24 hours</p>
                 <p>• Service bookings: Within 2-3 business days</p>
-                <button className={`w-full mt-4 bg-${branch.color}-600 hover:bg-${branch.color}-700 text-white px-4 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out`}>
                 <p>• Emergency cultural events: Immediate assistance</p>
               </div>
             </div>
@@ -270,4 +269,4 @@ const Contact = () => {
   );
 };
 
-            <div className="bg-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+export default Contact;
