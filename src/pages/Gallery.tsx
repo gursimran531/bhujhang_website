@@ -86,7 +86,7 @@ const Gallery = () => {
       date: '2024-01-15'
     },
    {
-      id: 7,
+      id: 8,
       type: 'image',
       category: 'events',
       src: '/7.jpg',
