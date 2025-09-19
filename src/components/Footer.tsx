@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Sword } from 'lucide-react';
+import { MapPin, Phone, Mail, Sword, Youtube, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -47,6 +47,12 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-orange-400" />
                 <p className="text-gray-300 text-sm">+91 8289044042, +91 9855125651</p>
               </div>
+              <div className="flex items-center space-x-2">
+                <Instagram className="w-4 h-4 text-orange-400" />
+                <a href="https://www.instagram.com/bhujhang_jatha_nawanshahr_/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-sm transition-colors">
+                  @bhujhang_jatha_nawanshahr_
+                </a>
+              </div>
             </div>
           </div>
 
@@ -66,6 +72,30 @@ const Footer = () => {
                 <Mail className="w-4 h-4 text-orange-400" />
                 <p className="text-gray-300 text-sm">info@bhujhangjatha.com</p>
               </div>
+              <div className="flex items-center space-x-2">
+                <Instagram className="w-4 h-4 text-orange-400" />
+                <a href="https://www.instagram.com/bhujhang_jatha_brampton/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-sm transition-colors">
+                  @bhujhang_jatha_brampton
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Media Section */}
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="text-center mb-6">
+            <h4 className="text-lg font-semibold mb-4 text-orange-400">Follow Us</h4>
+            <div className="flex justify-center space-x-6">
+              <a
+                href="https://www.youtube.com/@bhujhangjathanawanshahr4991"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-300 hover:text-red-400 transition-colors"
+              >
+                <Youtube className="w-6 h-6" />
+                <span>YouTube Channel</span>
+              </a>
             </div>
           </div>
         </div>
