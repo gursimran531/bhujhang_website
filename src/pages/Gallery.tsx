@@ -19,7 +19,7 @@ const Gallery = () => {
       id: 1,
       type: 'image',
       category: 'gatka',
-      src: '/2.jpg',
+      src: '/5.jpg',
       title: 'Traditional Gatka Training',
       description: 'Master demonstrating traditional Gatka sword techniques',
       location: 'Nawanshahr, India',
