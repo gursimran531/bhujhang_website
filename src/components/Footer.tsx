@@ -41,11 +41,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-orange-400 mt-1" />
-                <p className="text-gray-300 text-sm">Nawanshahr, Punjab, India</p>
+                <p className="text-gray-300 text-sm">Gurdwara manji sahib patshahi 9ve, Banga Road, Nawanshahr, Punjab</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-orange-400" />
-                <p className="text-gray-300 text-sm">+91-XXXX-XXXXXX</p>
+                <p className="text-gray-300 text-sm">+91 8289044042, +91 9855125651</p>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-orange-400" />
-                <p className="text-gray-300 text-sm">+1-XXX-XXX-XXXX</p>
+                <p className="text-gray-300 text-sm">+1 (647) 300-5078</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-orange-400" />

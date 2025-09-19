@@ -43,8 +43,8 @@ const Contact = () => {
     {
       name: "Nawanshahr, Punjab",
       country: "India",
-      address: "Nawanshahr, Punjab, India",
-      phone: "+91-XXXX-XXXXXX",
+      address: "Gurdwara manji sahib patshahi 9ve, Banga Road, Nawanshahr, Punjab",
+      phone: "+91 8289044042, +91 9855125651",
       email: "nawanshahr@bhujhangjatha.com",
       hours: "Daily 6:00 AM - 8:00 PM",
       color: "orange"
@@ -53,7 +53,7 @@ const Contact = () => {
       name: "Brampton, Ontario", 
       country: "Canada",
       address: "Brampton, Ontario, Canada",
-      phone: "+1-XXX-XXX-XXXX",
+      phone: "+1 (647) 300-5078",
       email: "brampton@bhujhangjatha.com",
       hours: "Mon-Fri 6:00 PM - 9:00 PM, Weekends 9:00 AM - 5:00 PM",
       color: "blue"
