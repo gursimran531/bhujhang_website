@@ -12,10 +12,10 @@ const Footer = () => {
               <img 
                 src="/logo.png" 
                 alt="Bhujhang Jatha Logo" 
-                className="w-10 h-10 rounded-full object-cover"
+               className="w-12 h-12 rounded-full object-cover shadow-lg"
               />
               <div>
-                <h3 className="text-lg font-bold">Bhujhang Jatha</h3>
+               <h3 className="text-xl font-bold">Bhujhang Jatha</h3>
                 <p className="text-sm text-gray-400">Sikh Martial Arts</p>
               </div>
             </div>

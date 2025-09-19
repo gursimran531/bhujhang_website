@@ -31,10 +31,10 @@ const Header = () => {
             <img 
               src="/logo.png" 
               alt="Bhujhang Jatha Logo" 
-              className="w-12 h-12 rounded-full object-cover"
+             className="w-16 h-16 rounded-full object-cover shadow-lg"
             />
             <div>
-              <h1 className="text-xl font-bold text-white">Bhujhang Jatha</h1>
+             <h1 className="text-2xl font-bold text-white">Bhujhang Jatha</h1>
               <p className="text-sm text-yellow-400">Sikh Martial Arts</p>
             </div>
           </Link>
