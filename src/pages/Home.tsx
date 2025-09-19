@@ -95,10 +95,10 @@ const Home = () => {
         <div className="absolute bottom-10 right-20 w-60 h-60 bg-gradient-to-l from-orange-500/10 to-yellow-500/10 rounded-full blur-xl"></div>
         
         {/* World Map Background */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute inset-0 opacity-25 pointer-events-none">
           <svg viewBox="0 0 1000 500" className="w-full h-full">
             {/* Simplified world map outline */}
-            <g fill="currentColor" className="text-white" opacity="0.4">
+            <g fill="currentColor" className="text-white" opacity="0.8">
               {/* North America (Canada) */}
               <path d="M150 80 L280 70 L320 90 L350 85 L380 95 L400 110 L420 120 L450 115 L480 125 L500 140 L520 135 L540 145 L560 150 L580 160 L600 155 L620 165 L640 170 L660 175 L680 180 L700 185 L720 190 L740 195 L760 200 L780 205 L800 210 L820 215 L840 220 L860 225 L880 230 L900 235 L920 240 L940 245 L960 250 L980 255 L1000 260 L1000 0 L0 0 L0 100 Z"/>
               
@@ -109,16 +109,16 @@ const Home = () => {
             {/* Location markers */}
             <g>
               {/* Canada marker */}
-              <circle cx="250" cy="120" r="8" fill="#3B82F6" className="animate-pulse"/>
+              <circle cx="250" cy="120" r="12" fill="#3B82F6" className="animate-pulse"/>
               <text x="250" y="110" textAnchor="middle" className="text-xs fill-blue-400 font-semibold">Canada</text>
               
               {/* India marker */}
-              <circle cx="750" cy="220" r="8" fill="#EA580C" className="animate-pulse"/>
+              <circle cx="750" cy="220" r="12" fill="#EA580C" className="animate-pulse"/>
               <text x="750" y="210" textAnchor="middle" className="text-xs fill-orange-400 font-semibold">India</text>
             </g>
             
             {/* Connection line */}
-            <line x1="250" y1="120" x2="750" y2="220" stroke="url(#connectionGradient)" strokeWidth="3" strokeDasharray="8,4" className="animate-pulse" opacity="0.8"/>
+            <line x1="250" y1="120" x2="750" y2="220" stroke="url(#connectionGradient)" strokeWidth="4" strokeDasharray="10,5" className="animate-pulse" opacity="1"/>
             
             {/* Gradient definition */}
             <defs>
