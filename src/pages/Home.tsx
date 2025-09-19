@@ -94,6 +94,42 @@ const Home = () => {
         <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-r from-orange-400/15 to-yellow-400/15 rounded-full blur-2xl"></div>
         <div className="absolute bottom-10 right-20 w-60 h-60 bg-gradient-to-l from-orange-500/10 to-yellow-500/10 rounded-full blur-xl"></div>
         
+        {/* World Map Background */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <svg viewBox="0 0 1000 500" className="w-full h-full">
+            {/* Simplified world map outline */}
+            <g fill="currentColor" className="text-white">
+              {/* North America (Canada) */}
+              <path d="M150 80 L280 70 L320 90 L350 85 L380 95 L400 110 L420 120 L450 115 L480 125 L500 140 L520 135 L540 145 L560 150 L580 160 L600 155 L620 165 L640 170 L660 175 L680 180 L700 185 L720 190 L740 195 L760 200 L780 205 L800 210 L820 215 L840 220 L860 225 L880 230 L900 235 L920 240 L940 245 L960 250 L980 255 L1000 260 L1000 0 L0 0 L0 100 Z" opacity="0.3"/>
+              
+              {/* Asia (India region) */}
+              <path d="M650 200 L680 195 L710 200 L740 205 L770 210 L800 215 L830 220 L860 225 L890 230 L920 235 L950 240 L980 245 L1000 250 L1000 300 L980 295 L950 290 L920 285 L890 280 L860 275 L830 270 L800 265 L770 260 L740 255 L710 250 L680 245 L650 240 Z" opacity="0.3"/>
+            </g>
+            
+            {/* Location markers */}
+            <g>
+              {/* Canada marker */}
+              <circle cx="250" cy="120" r="8" fill="#3B82F6" className="animate-pulse"/>
+              <text x="250" y="110" textAnchor="middle" className="text-xs fill-blue-400 font-semibold">Canada</text>
+              
+              {/* India marker */}
+              <circle cx="750" cy="220" r="8" fill="#EA580C" className="animate-pulse"/>
+              <text x="750" y="210" textAnchor="middle" className="text-xs fill-orange-400 font-semibold">India</text>
+            </g>
+            
+            {/* Connection line */}
+            <line x1="250" y1="120" x2="750" y2="220" stroke="url(#connectionGradient)" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse" opacity="0.6"/>
+            
+            {/* Gradient definition */}
+            <defs>
+              <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#3B82F6"/>
+                <stop offset="100%" stopColor="#EA580C"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
