@@ -38,10 +38,10 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="text-yellow-400">Services</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             We offer comprehensive services to support and celebrate Sikh culture, 
             tradition, and spiritual growth in communities across India and Canada.
           </p>
@@ -68,7 +68,7 @@ const Services = () => {
                 {service.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-white">{feature}</span>
                   </div>
                 ))}
               </div>

@@ -66,10 +66,10 @@ const Branches = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="text-yellow-400">Branches</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Bhujhang Jatha operates across two continents, bringing authentic Sikh martial arts 
             tradition to communities in India and Canada.
           </p>
@@ -88,22 +88,22 @@ const Branches = () => {
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Users className="w-8 h-8 text-blue-600" />
             </div>
-            <div className="text-3xl font-bold text-gray-900">350+</div>
-            <div className="text-gray-600">Active Students</div>
+            <div className="text-3xl font-bold text-white">350+</div>
+            <div className="text-gray-300">Active Students</div>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Award className="w-8 h-8 text-green-600" />
             </div>
-            <div className="text-3xl font-bold text-gray-900">25+</div>
-            <div className="text-gray-600">Years Experience</div>
+            <div className="text-3xl font-bold text-white">25+</div>
+            <div className="text-gray-300">Years Experience</div>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Clock className="w-8 h-8 text-purple-600" />
             </div>
-            <div className="text-3xl font-bold text-gray-900">100+</div>
-            <div className="text-gray-600">Events Organized</div>
+            <div className="text-3xl font-bold text-white">100+</div>
+            <div className="text-gray-300">Events Organized</div>
           </div>
         </div>
 

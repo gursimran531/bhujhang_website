@@ -37,7 +37,7 @@ const Home = () => {
               <br />
               Sikh Martial Arts
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-white max-w-3xl mx-auto">
               Preserving the warrior spirit of the Khalsa through traditional Gatka, cultural events, and spiritual guidance
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -50,7 +50,7 @@ const Home = () => {
               </Link>
               <Link
                 to="/contact"
-                className="border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+                className="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
               >
                 Get Started
               </Link>
@@ -63,10 +63,10 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Why Choose Bhujhang Jatha?
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               We are dedicated to preserving and promoting Sikh martial arts traditions while serving our global community
             </p>
           </div>
@@ -86,10 +86,10 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Our Global Presence
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Serving Sikh communities across two continents
             </p>
           </div>

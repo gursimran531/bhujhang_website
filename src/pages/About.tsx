@@ -30,10 +30,10 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About <span className="text-yellow-400">Bhujhang Jatha</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Dedicated to preserving the warrior spirit of the Khalsa through traditional martial arts, 
             cultural events, and spiritual guidance across two continents.
           </p>
@@ -43,7 +43,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
             <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
-            <div className="prose prose-lg text-gray-300">
+            <div className="prose prose-lg text-white">
               <p className="mb-4">
                 Bhujhang Jatha was founded with a sacred mission: to preserve and promote the ancient 
                 martial arts traditions of the Sikh community. Rooted in the warrior tradition of the 
@@ -100,7 +100,7 @@ const About = () => {
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
-                <p className="text-gray-300">{value.description}</p>
+                <p className="text-white">{value.description}</p>
               </div>
             ))}
           </div>
@@ -110,7 +110,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-blue-900 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
-            <p className="text-gray-200">
+            <p className="text-white">
               To preserve, promote, and teach traditional Sikh martial arts while fostering a strong sense 
               of community, cultural identity, and spiritual growth among Sikhs worldwide. We are committed 
               to maintaining the authentic practices of Gatka while adapting to serve our global community.
