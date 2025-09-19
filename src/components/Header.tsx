@@ -25,7 +25,7 @@ const Header = () => {
         <div className="absolute -top-5 -right-5 w-24 h-24 bg-gradient-to-l from-orange-500/8 to-yellow-500/8 rounded-full blur-lg"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
