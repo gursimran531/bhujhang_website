@@ -48,9 +48,9 @@ const Gallery = () => {
     {
       id: 4,
       type: 'image',
-      category: 'events',
+      category: 'kirtan',
       src: '/4.jpg',
-      title: 'Youth Gatka Class',
+      title: 'Nagar Kirtan Procession',
       description: 'Traditional martial arts training session',
       location: 'Brampton, Canada',
       date: '2024-06-10'
