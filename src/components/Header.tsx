@@ -31,7 +31,7 @@ const Header = () => {
             <img 
               src="/logo.png" 
               alt="Bhujhang Jatha Logo" 
-             className="w-auto h-24 rounded-full object-contain shadow-lg"
+             className="w-25 h-auto rounded-full object-contain shadow-lg"
              style={{ imageRendering: 'crisp-edges' }}
             />
             <div>
