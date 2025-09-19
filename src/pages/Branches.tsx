@@ -115,7 +115,7 @@ const Branches = () => {
                 {/* Main Info */}
                 <div className="lg:col-span-2">
                   <div className="flex items-center space-x-3 mb-4">
-                    <span className="text-3xl">🇮🇳</span>
+                    <span className="text-3xl">{branch.flag}</span>
                     <div>
                       <h2 className="text-3xl font-bold text-gray-900">{branch.name}</h2>
                       <p className={`text-${branch.accentColor} font-semibold`}>{branch.country}</p>
