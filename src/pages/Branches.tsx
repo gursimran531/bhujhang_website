@@ -27,6 +27,7 @@ const Branches = () => {
       },
       hours: "Daily 6:00 AM - 8:00 PM",
       established: "2020",
+      established: "2015",
       students: "200+",
       bgColor: "from-orange-50 to-orange-100",
       accentColor: "orange-600"
