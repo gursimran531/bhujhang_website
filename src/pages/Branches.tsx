@@ -26,7 +26,7 @@ const Branches = () => {
         email: "nawanshahr@bhujhangjatha.com"
       },
       hours: "Daily 6:00 AM - 8:00 PM",
-      established: "1995",
+      established: "2020",
       students: "200+",
       bgColor: "from-orange-50 to-orange-100",
       accentColor: "orange-600"
