@@ -88,7 +88,6 @@ const Branches = () => {
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Users className="w-8 h-8 text-blue-600" />
             </div>
-            <div className="text-3xl font-bold text-white">350+</div>
             <div className="text-3xl font-bold text-white">100+</div>
             <div className="text-gray-300">Active Students</div>
           </div>
