@@ -64,16 +64,7 @@ const Home = () => {
       {/* Features Section */}
       <section 
         className="py-16 relative overflow-hidden"
-        style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/8828289/pexels-photo-8828289.jpeg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
       >
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        
         {/* Saffron blur effects */}
         <div className="absolute top-10 left-20 w-80 h-80 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 right-10 w-60 h-60 bg-gradient-to-l from-orange-500/15 to-yellow-500/15 rounded-full blur-xl"></div>
