@@ -98,12 +98,12 @@ const Home = () => {
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <svg viewBox="0 0 1000 500" className="w-full h-full">
             {/* Simplified world map outline */}
-            <g fill="currentColor" className="text-white">
+            <g fill="currentColor" className="text-white" opacity="0.4">
               {/* North America (Canada) */}
-              <path d="M150 80 L280 70 L320 90 L350 85 L380 95 L400 110 L420 120 L450 115 L480 125 L500 140 L520 135 L540 145 L560 150 L580 160 L600 155 L620 165 L640 170 L660 175 L680 180 L700 185 L720 190 L740 195 L760 200 L780 205 L800 210 L820 215 L840 220 L860 225 L880 230 L900 235 L920 240 L940 245 L960 250 L980 255 L1000 260 L1000 0 L0 0 L0 100 Z" opacity="0.3"/>
+              <path d="M150 80 L280 70 L320 90 L350 85 L380 95 L400 110 L420 120 L450 115 L480 125 L500 140 L520 135 L540 145 L560 150 L580 160 L600 155 L620 165 L640 170 L660 175 L680 180 L700 185 L720 190 L740 195 L760 200 L780 205 L800 210 L820 215 L840 220 L860 225 L880 230 L900 235 L920 240 L940 245 L960 250 L980 255 L1000 260 L1000 0 L0 0 L0 100 Z"/>
               
               {/* Asia (India region) */}
-              <path d="M650 200 L680 195 L710 200 L740 205 L770 210 L800 215 L830 220 L860 225 L890 230 L920 235 L950 240 L980 245 L1000 250 L1000 300 L980 295 L950 290 L920 285 L890 280 L860 275 L830 270 L800 265 L770 260 L740 255 L710 250 L680 245 L650 240 Z" opacity="0.3"/>
+              <path d="M650 200 L680 195 L710 200 L740 205 L770 210 L800 215 L830 220 L860 225 L890 230 L920 235 L950 240 L980 245 L1000 250 L1000 300 L980 295 L950 290 L920 285 L890 280 L860 275 L830 270 L800 265 L770 260 L740 255 L710 250 L680 245 L650 240 Z"/>
             </g>
             
             {/* Location markers */}
@@ -118,7 +118,7 @@ const Home = () => {
             </g>
             
             {/* Connection line */}
-            <line x1="250" y1="120" x2="750" y2="220" stroke="url(#connectionGradient)" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse" opacity="0.6"/>
+            <line x1="250" y1="120" x2="750" y2="220" stroke="url(#connectionGradient)" strokeWidth="3" strokeDasharray="8,4" className="animate-pulse" opacity="0.8"/>
             
             {/* Gradient definition */}
             <defs>
