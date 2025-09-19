@@ -19,10 +19,10 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 px-4 pt-4">
-      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-lg border border-white border-opacity-20 relative overflow-hidden">
+      <div className="bg-black bg-opacity-20 backdrop-blur-sm rounded-2xl shadow-lg border border-white border-opacity-10 relative overflow-hidden">
         {/* Saffron blur effects */}
-        <div className="absolute -top-10 -left-10 w-32 h-32 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-xl"></div>
-        <div className="absolute -top-5 -right-5 w-24 h-24 bg-gradient-to-l from-orange-500/15 to-yellow-500/15 rounded-full blur-lg"></div>
+        <div className="absolute -top-10 -left-10 w-32 h-32 bg-gradient-to-r from-orange-400/10 to-yellow-400/10 rounded-full blur-xl"></div>
+        <div className="absolute -top-5 -right-5 w-24 h-24 bg-gradient-to-l from-orange-500/8 to-yellow-500/8 rounded-full blur-lg"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex justify-between items-center py-4">
