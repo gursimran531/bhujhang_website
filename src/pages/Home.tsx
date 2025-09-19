@@ -188,12 +188,12 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 relative overflow-hidden bg-orange-500">
+      <section className="py-16 relative overflow-hidden -mt-32 z-10">
         {/* Saffron blur effects */}
         <div className="absolute top-10 left-20 w-80 h-80 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 right-10 w-60 h-60 bg-gradient-to-l from-orange-500/15 to-yellow-500/15 rounded-full blur-xl"></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-orange-500 py-16 rounded-2xl shadow-2xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Begin Your Journey?
           </h2>
