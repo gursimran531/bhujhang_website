@@ -74,6 +74,26 @@ const Gallery = () => {
       description: 'Jathedar Jaspreet Singh and Jathedar Gursimarpreet Singh',
       location: 'Nawanshahr, India',
       date: '2024-01-15'
+    },
+    {
+      id: 7,
+      type: 'image',
+      category: 'events',
+      src: '/6.jpg',
+      title: 'Bhujhangi Fauj',
+      description: 'Bhujhang Jatha Team',
+      location: 'Nawanshahr, India',
+      date: '2024-01-15'
+    },
+   {
+      id: 7,
+      type: 'image',
+      category: 'events',
+      src: '/7.jpg',
+      title: 'Bhujhangi Faujj',
+      description: 'Bhujhang Jatha Nawanshar Team',
+      location: 'Nawanshahr, India',
+      date: '2024-01-15'
     }
   ];
 
