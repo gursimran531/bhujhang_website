@@ -19,7 +19,7 @@ const About = () => {
       description: "Sharing wisdom of Gatka, history, and Sikh cultural practices."
     },
     {
-      icon: <Users className="w-8 h-8 text-yellow-500" />,
+      icon: <span className="text-2xl">☬</span>,
       title: "Community",
       description: "Building strong bonds within the global Sikh community."
     }
