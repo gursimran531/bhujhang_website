@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div className="min-h-screen relative">
       {/* Hero Section */}
-      <section className="hero-background relative text-white pt-24 pb-20">
+      <section className="hero-background relative text-white py-20">
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -8,9 +8,9 @@ const Gallery = () => {
   const categories = [
     { id: 'all', label: 'All' },
     { id: 'gatka', label: 'Gatka Training' },
-    { id: 'events', label: 'Bhujhangi Team' },
+    { id: 'events', label: 'Cultural Events' },
     { id: 'kirtan', label: 'Nagar Kirtan' },
-    { id: 'jathedar', label: 'Jathedar' }
+    { id: 'ceremonies', label: 'Ceremonies' }
   ];
 
   // Using Pexels stock photos for demonstration
@@ -18,8 +18,8 @@ const Gallery = () => {
     {
       id: 1,
       type: 'image',
-      category: 'events',
-      src: '/8.jpg',
+      category: 'gatka',
+      src: '/1.jpg',
       title: 'Traditional Gatka Training',
       description: 'Master demonstrating traditional Gatka sword techniques',
       location: 'Nawanshahr, India',
@@ -32,68 +32,28 @@ const Gallery = () => {
       src: '/2.jpg',
       title: 'Cultural Celebration',
       description: 'Traditional Sikh ceremony with community participation',
-      location: 'Nawanshahr, India',
+      location: 'Brampton, Canada',
       date: '2024-04-13'
     },
     {
       id: 3,
       type: 'image',
-      category: 'gatka',
-      src: '/3.jpg',
-      title: 'Gatka Team',
-      description: 'Bhujhan Jatha Gatka Team',
+      category: 'kirtan',
+      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Nagar Kirtan Procession',
+      description: 'Community gathering for spiritual celebration',
       location: 'Nawanshahr, India',
       date: '2024-03-20'
     },
     {
       id: 4,
       type: 'image',
-      category: 'kirtan',
-      src: '/4.jpg',
-      title: 'Nagar Kirtan Procession',
+      category: 'gatka',
+      src: 'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Youth Gatka Class',
       description: 'Traditional martial arts training session',
-      location: 'Nawanshahr, India',
+      location: 'Brampton, Canada',
       date: '2024-06-10'
-    },
-    {
-      id: 5,
-      type: 'image',
-      category: 'jathedar',
-      src: '/1.jpg',
-      title: 'Jathedar',
-      description: 'Jathedar Jaspreet Singh and Jathedar Gursimarpreet Singh',
-      location: 'Nawanshahr, India',
-      date: '2024-01-15'
-    },
-    {
-      id: 6,
-      type: 'image',
-      category: 'jathedar',
-      src: '/5.jpg',
-      title: 'Jathedar',
-      description: 'Jathedar Jaspreet Singh and Jathedar Gursimarpreet Singh',
-      location: 'Nawanshahr, India',
-      date: '2024-01-15'
-    },
-    {
-      id: 7,
-      type: 'image',
-      category: 'events',
-      src: '/6.jpg',
-      title: 'Bhujhangi Fauj',
-      description: 'Bhujhang Jatha Team',
-      location: 'Nawanshahr, India',
-      date: '2024-01-15'
-    },
-   {
-      id: 8,
-      type: 'image',
-      category: 'events',
-      src: '/7.jpg',
-      title: 'Bhujhangi Faujj',
-      description: 'Bhujhang Jatha Nawanshar Team',
-      location: 'Nawanshahr, India',
-      date: '2024-01-15'
     }
   ];
 
