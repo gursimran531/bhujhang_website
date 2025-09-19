@@ -19,7 +19,7 @@ const Gallery = () => {
       id: 1,
       type: 'image',
       category: 'gatka',
-      src: 'https://images.pexels.com/photos/7034274/pexels-photo-7034274.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/1.jpg',
       title: 'Traditional Gatka Training',
       description: 'Master demonstrating traditional Gatka sword techniques',
       location: 'Nawanshahr, India',
@@ -29,7 +29,7 @@ const Gallery = () => {
       id: 2,
       type: 'image',
       category: 'events',
-      src: 'https://images.pexels.com/photos/8553873/pexels-photo-8553873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/2.jpg',
       title: 'Cultural Celebration',
       description: 'Traditional Sikh ceremony with community participation',
       location: 'Brampton, Canada',
@@ -53,27 +53,7 @@ const Gallery = () => {
       title: 'Youth Gatka Class',
       description: 'Traditional martial arts training session',
       location: 'Brampton, Canada',
-      date: '2024-02-10'
-    },
-    {
-      id: 5,
-      type: 'image',
-      category: 'ceremonies',
-      src: '/4.jpg',
-      title: 'Spiritual Ceremony',
-      description: 'Master demonstrating traditional Gatka sword techniques',
-      location: 'Nawanshahr, India',
-      date: '2024-01-26'
-    },
-    {
-      id: 6,
-      type: 'image',
-      category: 'ceremonies',
-      src: '/3.jpg',
-      title: 'Team Unity',
-      description: 'Bhujhang Jatha members showcasing unity and tradition',
-      location: 'Nawanshahr, India',
-      date: '2024-03-05'
+      date: '2024-06-10'
     }
   ];
 
