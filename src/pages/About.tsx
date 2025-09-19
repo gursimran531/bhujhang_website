@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen py-12 text-white" style={{ backgroundColor: '#161362' }}>
+    <div className="min-h-screen py-12 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-16">

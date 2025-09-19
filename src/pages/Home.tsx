@@ -27,10 +27,9 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       {/* Hero Section */}
-      <section className="relative text-white py-20" style={{ backgroundColor: '#161362' }}>
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+      <section className="relative text-white py-20">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">

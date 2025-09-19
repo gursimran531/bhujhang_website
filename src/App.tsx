@@ -12,7 +12,15 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen" style={{ backgroundColor: '#161362' }}>
+      <div className="min-h-screen grid-background">
+        {/* Saffron blur effects */}
+        <div className="saffron-blur-1" style={{ top: '10%', left: '15%' }}></div>
+        <div className="saffron-blur-2" style={{ top: '60%', right: '10%' }}></div>
+        <div className="saffron-blur-3" style={{ top: '30%', left: '70%' }}></div>
+        <div className="saffron-blur-1" style={{ bottom: '20%', left: '5%', opacity: '0.6' }}></div>
+        <div className="saffron-blur-2" style={{ top: '80%', left: '50%', opacity: '0.4' }}></div>
+        
+        <div className="content-layer">
         <Header />
         <main>
           <Routes>
@@ -26,6 +34,7 @@ function App() {
         </main>
         <Footer />
       </div>
+        </div>
     </Router>
   );
 }
