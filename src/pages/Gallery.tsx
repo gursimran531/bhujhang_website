@@ -32,7 +32,7 @@ const Gallery = () => {
       src: '/2.jpg',
       title: 'Cultural Celebration',
       description: 'Traditional Sikh ceremony with community participation',
-      location: 'Brampton, Canada',
+      location: 'Nawanshahr, India',
       date: '2024-04-13'
     },
     {
@@ -52,7 +52,7 @@ const Gallery = () => {
       src: '/4.jpg',
       title: 'Nagar Kirtan Procession',
       description: 'Traditional martial arts training session',
-      location: 'Brampton, Canada',
+      location: 'Nawanshahr, India',
       date: '2024-06-10'
     },
     {
