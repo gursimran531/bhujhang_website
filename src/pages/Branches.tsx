@@ -95,7 +95,7 @@ const Branches = () => {
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Award className="w-8 h-8 text-green-600" />
             </div>
-            <div className="text-3xl font-bold text-white">25+</div>
+            <div className="text-3xl font-bold text-white">10+</div>
             <div className="text-gray-300">Years Experience</div>
           </div>
           <div className="text-center">
