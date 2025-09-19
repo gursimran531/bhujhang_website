@@ -46,7 +46,7 @@ const Gallery = () => {
       date: '2024-03-20'
     },
     {
-      description: 'Community gathering for spiritual celebration',
+      id: 4,
       type: 'image',
       category: 'gatka',
       src: 'https://images.pexels.com/photos/7034274/pexels-photo-7034274.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -54,9 +54,9 @@ const Gallery = () => {
       description: 'Traditional martial arts training session',
       location: 'Brampton, Canada',
       date: '2024-02-10'
-      src: 'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
     {
-      description: 'Traditional martial arts training session',
+      id: 5,
       type: 'image',
       category: 'ceremonies',
       src: 'https://images.pexels.com/photos/6394567/pexels-photo-6394567.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -64,9 +64,9 @@ const Gallery = () => {
       description: 'Master demonstrating traditional Gatka sword techniques',
       location: 'Nawanshahr, India',
       date: '2024-01-26'
-      src: 'https://images.pexels.com/photos/6394567/pexels-photo-6394567.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
     {
-      description: 'Traditional religious gathering with community',
+      id: 6,
       type: 'image',
       category: 'ceremonies',
       src: '/3.jpg',
@@ -79,7 +79,7 @@ const Gallery = () => {
 
   const filteredItems = selectedCategory === 'all' 
     ? mediaItems 
-      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
+    : mediaItems.filter(item => item.category === selectedCategory);
 
   return (
     <div className="min-h-screen py-12 text-white relative">
