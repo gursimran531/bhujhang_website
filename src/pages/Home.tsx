@@ -188,24 +188,39 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-orange-600 to-orange-700 text-white">
+      <section className="py-16 relative overflow-hidden" style={{
+        background: 'linear-gradient(135deg, #FF8C00 0%, #FFA500 50%, #FFB347 100%)'
+      }}>
+        {/* Grid overlay */}
+        <div className="absolute inset-0 opacity-30" style={{
+          backgroundImage: `
+            linear-gradient(rgba(22, 19, 98, 0.4) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(22, 19, 98, 0.4) 1px, transparent 1px)
+          `,
+          backgroundSize: '30px 30px'
+        }}></div>
+        
+        {/* Saffron blur effects */}
+        <div className="absolute top-10 left-20 w-80 h-80 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 right-10 w-60 h-60 bg-gradient-to-l from-orange-500/15 to-yellow-500/15 rounded-full blur-xl"></div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Begin Your Journey?
           </h2>
-          <p className="text-xl mb-8 text-orange-100">
+          <p className="text-xl mb-8 text-white">
             Join our community and learn the ancient art of Sikh martial traditions
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/services"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 relative z-10"
             >
               View Our Services
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white hover:bg-white hover:text-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="border-2 border-white hover:bg-white hover:text-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 relative z-10"
             >
               Contact Us Today
             </Link>
