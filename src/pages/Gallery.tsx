@@ -137,7 +137,7 @@ const Gallery = () => {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="gallery-item"
+              className="gallery-item group"
               onClick={() => setSelectedMedia(item)}
             >
               <div className="relative overflow-hidden rounded-2xl bg-gray-200 aspect-square shadow-lg hover:shadow-2xl transition-all duration-300">
