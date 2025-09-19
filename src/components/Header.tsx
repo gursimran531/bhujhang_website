@@ -18,8 +18,13 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 px-4 pt-4">
+      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-lg border border-white border-opacity-20 relative overflow-hidden">
+        {/* Saffron blur effects */}
+        <div className="absolute -top-10 -left-10 w-32 h-32 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-xl"></div>
+        <div className="absolute -top-5 -right-5 w-24 h-24 bg-gradient-to-l from-orange-500/15 to-yellow-500/15 rounded-full blur-lg"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
@@ -29,8 +34,8 @@ const Header = () => {
               className="w-12 h-12 rounded-full object-cover"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Bhujhang Jatha</h1>
-              <p className="text-sm text-orange-600">Sikh Martial Arts</p>
+              <h1 className="text-xl font-bold text-white">Bhujhang Jatha</h1>
+              <p className="text-sm text-yellow-400">Sikh Martial Arts</p>
             </div>
           </Link>
 
@@ -42,8 +47,8 @@ const Header = () => {
                 to={item.path}
                 className={`transition-colors duration-200 font-medium ${
                   isActive(item.path)
-                    ? 'text-orange-600 border-b-2 border-orange-600'
-                    : 'text-gray-700 hover:text-orange-600'
+                    ? 'text-yellow-400 border-b-2 border-yellow-400'
+                    : 'text-white hover:text-yellow-400'
                 }`}
               >
                 {item.label}
@@ -57,24 +62,24 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-gray-700" />
+              <X className="w-6 h-6 text-white" />
             ) : (
-              <Menu className="w-6 h-6 text-gray-700" />
+              <Menu className="w-6 h-6 text-white" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-200">
+          <nav className="md:hidden py-4 border-t border-white border-opacity-20">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={`block py-2 px-4 transition-colors duration-200 ${
                   isActive(item.path)
-                    ? 'text-orange-600 bg-orange-50'
-                    : 'text-gray-700 hover:text-orange-600 hover:bg-gray-50'
+                    ? 'text-yellow-400 bg-white bg-opacity-10'
+                    : 'text-white hover:text-yellow-400 hover:bg-white hover:bg-opacity-5'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -83,6 +88,7 @@ const Header = () => {
             ))}
           </nav>
         )}
+        </div>
       </div>
     </header>
   );
