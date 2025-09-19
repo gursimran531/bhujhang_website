@@ -18,9 +18,9 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="absolute top-4 left-0 right-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 px-6 bg-black bg-opacity-20 backdrop-blur-md rounded-2xl border border-white border-opacity-20 shadow-lg">
+    <header className="absolute top-0 left-0 right-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
@@ -66,7 +66,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 py-4 px-6 bg-black bg-opacity-30 backdrop-blur-md rounded-2xl border border-white border-opacity-20">
+          <nav className="md:hidden py-4 border-t border-white border-opacity-20">
             {navItems.map((item) => (
               <Link
                 key={item.path}
