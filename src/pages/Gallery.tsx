@@ -49,21 +49,31 @@ const Gallery = () => {
       id: 4,
       type: 'image',
       category: 'gatka',
-      src: '/4.jpg',
-      title: 'Gatka Warriors Assembly',
-      description: 'Members with traditional weapons and attire',
-      location: 'Nawanshahr, India',
+      src: 'https://images.pexels.com/photos/7034274/pexels-photo-7034274.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Youth Gatka Class',
+      description: 'Traditional martial arts training session',
+      location: 'Brampton, Canada',
       date: '2024-02-10'
     },
     {
       id: 5,
       type: 'image',
       category: 'ceremonies',
-      src: '/5.jpg',
-      title: 'Group Formation',
-      description: 'Complete team in traditional blue uniforms',
+      src: 'https://images.pexels.com/photos/6394567/pexels-photo-6394567.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Spiritual Ceremony',
+      description: 'Traditional religious gathering with community',
       location: 'Nawanshahr, India',
       date: '2024-01-26'
+    },
+    {
+      id: 6,
+      type: 'image',
+      category: 'ceremonies',
+      src: '/3.jpg',
+      title: 'Team Unity',
+      description: 'Bhujhang Jatha members showcasing unity and tradition',
+      location: 'Nawanshahr, India',
+      date: '2024-03-05'
     }
   ];
 
