@@ -55,7 +55,7 @@ const Branches = () => {
       },
       hours: "Mon-Fri 6:00 PM - 9:00 PM, Weekends 9:00 AM - 5:00 PM",
       established: "2010",
-      established: "2022",
+      established: "2015",
       bgColor: "from-blue-50 to-blue-100",
       accentColor: "blue-600"
     }
