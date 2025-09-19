@@ -14,7 +14,7 @@ const About = () => {
       description: "Serving the Sikh community with dedication and spiritual commitment."
     },
     {
-      icon: <BookOpen className="w-8 h-8 text-yellow-500" />,
+      icon: <span className="text-2xl">📖</span>,
       title: "Knowledge",
       description: "Sharing wisdom of Gatka, history, and Sikh cultural practices."
     },
