@@ -83,9 +83,13 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen py-12 text-white relative">
+      <div className="absolute top-10 right-10 w-64 h-64 bg-gradient-to-r from-orange-400/15 to-yellow-400/15 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-20 w-48 h-48 bg-gradient-to-r from-yellow-400/10 to-orange-500/10 rounded-full blur-2xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 relative">
+          <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl -mx-8 -my-8"></div>
+          <div className="relative py-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="text-yellow-400">Gallery</span>
           </h1>
@@ -93,10 +97,13 @@ const Gallery = () => {
             Explore our collection of photos and videos showcasing Gatka training, 
             cultural events, and community celebrations from both our branches.
           </p>
+          </div>
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12 relative">
+          <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-sm rounded-3xl -mx-8 -my-4"></div>
+          <div className="relative py-4">
           {categories.map((category) => (
             <button
               key={category.id}
@@ -110,10 +117,13 @@ const Gallery = () => {
               {category.label}
             </button>
           ))}
+          </div>
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+          <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl -mx-4 -my-8"></div>
+          <div className="relative py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map((item) => (
             <div
               key={item.id}
@@ -152,6 +162,7 @@ const Gallery = () => {
               </div>
             </div>
           ))}
+          </div>
         </div>
 
         {/* Modal */}
@@ -190,7 +201,9 @@ const Gallery = () => {
         )}
 
         {/* Call to Action */}
-        <div className="mt-16 text-center bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-lg">
+        <div className="mt-16 text-center relative text-white p-8 rounded-lg">
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/30 to-orange-700/30 backdrop-blur-sm rounded-3xl"></div>
+          <div className="relative">
           <h3 className="text-2xl font-bold mb-4">Want to Be Part of Our Story?</h3>
           <p className="text-orange-100 mb-6">
             Join our community events and training sessions. Follow us to see more updates!
@@ -208,6 +221,7 @@ const Gallery = () => {
             >
               Our Programs
             </a>
+          </div>
           </div>
         </div>
       </div>
