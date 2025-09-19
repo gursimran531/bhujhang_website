@@ -110,7 +110,7 @@ const Branches = () => {
         {/* Branch Details */}
         <div className="space-y-12">
           {branchData.map((branch, index) => (
-            <div key={index} className={`bg-gradient-to-br ${branch.bgColor} p-8 rounded-lg`}>
+            <div key={index} className={`branch-card ${branch.bgColor}`}>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Main Info */}
                 <div className="lg:col-span-2">
@@ -152,7 +152,7 @@ const Branches = () => {
                 </div>
 
                 {/* Contact Info */}
-                <div className="bg-white p-6 rounded-lg">
+                <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <h4 className="text-xl font-semibold text-gray-900 mb-4">Contact Information</h4>
                   
                   <div className="space-y-4">
@@ -196,7 +196,7 @@ const Branches = () => {
                     </div>
                   </div>
 
-                  <button className={`w-full mt-4 bg-${branch.accentColor} hover:bg-${branch.accentColor} text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-200`}>
+                  <button className={`w-full mt-4 bg-${branch.accentColor} hover:bg-${branch.accentColor} text-white px-4 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out`}>
                     Contact This Branch
                   </button>
                 </div>
@@ -206,7 +206,7 @@ const Branches = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-lg text-center">
+        <div className="mt-16 bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-2xl text-center shadow-lg hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold mb-4">Visit Our Branches</h3>
           <p className="text-orange-100 mb-6">
             We welcome visitors to both our branches. Come experience authentic Sikh martial arts training 
@@ -215,13 +215,13 @@ const Branches = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out"
             >
               Schedule a Visit
             </a>
             <a
               href="/services"
-              className="border-2 border-white hover:bg-white hover:text-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="btn-secondary"
             >
               Learn About Programs
             </a>

@@ -50,14 +50,14 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
-            <div key={index} className="bg-gray-800 border border-gray-600 rounded-lg p-8 hover:shadow-lg transition-shadow duration-200">
+            <div key={index} className="service-card">
               <div className="flex items-start space-x-4 mb-6">
-                <div className="bg-yellow-500 p-3 rounded-lg">
+                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 p-3 rounded-xl shadow-lg">
                   {service.icon}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                  <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-block bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm font-medium shadow-sm">
                     {service.availability}
                   </span>
                 </div>
@@ -67,7 +67,7 @@ const Services = () => {
                 <h4 className="font-semibold text-white">What's Included:</h4>
                 {service.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full shadow-sm"></div>
                     <span className="text-white">{feature}</span>
                   </div>
                 ))}
@@ -78,7 +78,7 @@ const Services = () => {
 
         {/* Branch-Specific Information */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-lg">
+          <div className="branch-card from-orange-50 to-orange-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
               <MapPin className="w-6 h-6 text-orange-600 mr-2" />
               Nawanshahr, India
@@ -107,7 +107,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
+          <div className="branch-card from-blue-50 to-blue-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
               <MapPin className="w-6 h-6 text-blue-600 mr-2" />
               Brampton, Canada
@@ -137,7 +137,7 @@ const Services = () => {
         </div>
 
         {/* Contact CTA */}
-        <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-lg text-center">
+        <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-2xl text-center shadow-lg hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold mb-4">Ready to Book Our Services?</h3>
           <p className="text-orange-100 mb-6">
             Contact us to discuss your requirements and learn how we can serve your community
@@ -145,13 +145,13 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out"
             >
               Request Quote
             </a>
             <a
               href="tel:+16473005078"
-              className="border-2 border-white hover:bg-white hover:text-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center"
+              className="btn-secondary flex items-center justify-center"
             >
               <Phone className="w-4 h-4 mr-2" />
               Call Now

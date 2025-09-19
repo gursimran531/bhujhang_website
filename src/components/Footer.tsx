@@ -92,7 +92,7 @@ const Footer = () => {
                 href="https://www.youtube.com/@bhujhangjathanawanshahr4991"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-gray-300 hover:text-red-400 transition-colors"
+                className="social-link hover:text-red-400"
               >
                 <Youtube className="w-6 h-6" />
                 <span>YouTube Channel</span>
@@ -101,7 +101,7 @@ const Footer = () => {
                 href="https://www.instagram.com/bhujhang_jatha_nawanshahr_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-gray-300 hover:text-pink-400 transition-colors"
+                className="social-link hover:text-pink-400"
               >
                 <Instagram className="w-6 h-6" />
                 <span>Nawanshahr Instagram</span>
@@ -110,7 +110,7 @@ const Footer = () => {
                 href="https://www.instagram.com/bhujhang_jatha_brampton/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-gray-300 hover:text-pink-400 transition-colors"
+                className="social-link hover:text-pink-400"
               >
                 <Instagram className="w-6 h-6" />
                 <span>Brampton Instagram</span>

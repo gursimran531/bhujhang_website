@@ -45,14 +45,14 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/about"
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center transition-colors duration-200"
+                className="btn-primary flex items-center justify-center"
               >
                 Learn More
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
               <Link
                 to="/contact"
-                className="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+                className="btn-secondary"
               >
                 Get Started
               </Link>
@@ -80,7 +80,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+              <div key={index} className="card-interactive p-6 fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
@@ -111,16 +111,16 @@ const Home = () => {
             {/* Location markers */}
             <g>
               {/* Canada marker */}
-              <circle cx="250" cy="120" r="12" fill="#3B82F6" className="animate-pulse"/>
+              <circle cx="250" cy="120" r="12" fill="#3B82F6" className="pulse-glow"/>
               <text x="250" y="110" textAnchor="middle" className="text-xs fill-blue-400 font-semibold">Canada</text>
               
               {/* India marker */}
-              <circle cx="750" cy="220" r="12" fill="#EA580C" className="animate-pulse"/>
+              <circle cx="750" cy="220" r="12" fill="#EA580C" className="pulse-glow"/>
               <text x="750" y="210" textAnchor="middle" className="text-xs fill-orange-400 font-semibold">India</text>
             </g>
             
             {/* Connection line */}
-            <line x1="250" y1="120" x2="750" y2="220" stroke="url(#connectionGradient)" strokeWidth="4" strokeDasharray="10,5" className="animate-pulse" opacity="1"/>
+            <line x1="250" y1="120" x2="750" y2="220" stroke="url(#connectionGradient)" strokeWidth="4" strokeDasharray="10,5" className="pulse-glow" opacity="1"/>
             
             {/* Gradient definition */}
             <defs>
@@ -143,7 +143,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Canada Branch */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
+            <div className="branch-card from-blue-50 to-blue-100">
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-2xl font-bold">CA</span>
@@ -155,7 +155,7 @@ const Home = () => {
                 </p>
                 <Link
                   to="/branches"
-                  className="text-blue-600 hover:text-blue-700 font-semibold flex items-center justify-center"
+                  className="btn-ghost text-blue-600 hover:text-blue-700 hover:bg-blue-50 flex items-center justify-center"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4 ml-1" />
@@ -164,7 +164,7 @@ const Home = () => {
             </div>
 
             {/* India Branch */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-lg">
+            <div className="branch-card from-orange-50 to-orange-100">
               <div className="text-center">
                 <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-2xl font-bold">IN</span>
@@ -176,7 +176,7 @@ const Home = () => {
                 </p>
                 <Link
                   to="/branches"
-                  className="text-orange-600 hover:text-orange-700 font-semibold flex items-center justify-center"
+                  className="btn-ghost flex items-center justify-center"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4 ml-1" />
@@ -193,7 +193,7 @@ const Home = () => {
         <div className="absolute top-10 left-20 w-80 h-80 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 right-10 w-60 h-60 bg-gradient-to-l from-orange-500/15 to-yellow-500/15 rounded-full blur-xl"></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-orange-500 py-16 rounded-3xl shadow-2xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-r from-orange-500 to-orange-600 py-16 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Begin Your Journey?
           </h2>
@@ -203,13 +203,13 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/services"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 relative z-10"
+              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out relative z-10"
             >
               View Our Services
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white hover:bg-white hover:text-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 relative z-10"
+              className="btn-secondary relative z-10"
             >
               Contact Us Today
             </Link>

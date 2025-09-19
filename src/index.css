@@ -86,6 +86,144 @@ body {
   z-index: 2;
 }
 
+/* Enhanced Button Styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out;
+}
+
+.btn-secondary {
+  @apply border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out backdrop-blur-sm;
+}
+
+.btn-outline {
+  @apply border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out;
+}
+
+.btn-ghost {
+  @apply text-orange-600 hover:text-orange-700 hover:bg-orange-50 px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out;
+}
+
+/* Enhanced Form Elements */
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-300 bg-white text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 shadow-sm hover:shadow-md transition-all duration-200 ease-out;
+}
+
+.form-input-dark {
+  @apply w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 shadow-sm hover:shadow-md transition-all duration-200 ease-out;
+}
+
+.form-select {
+  @apply w-full px-4 py-3 border border-gray-300 bg-white text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 shadow-sm hover:shadow-md transition-all duration-200 ease-out cursor-pointer;
+}
+
+.form-select-dark {
+  @apply w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 shadow-sm hover:shadow-md transition-all duration-200 ease-out cursor-pointer;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-3 border border-gray-300 bg-white text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 shadow-sm hover:shadow-md transition-all duration-200 ease-out resize-none;
+}
+
+.form-textarea-dark {
+  @apply w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 shadow-sm hover:shadow-md transition-all duration-200 ease-out resize-none;
+}
+
+/* Enhanced Navigation Links */
+.nav-link {
+  @apply transition-all duration-300 font-medium relative overflow-hidden;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #f59e0b, #eab308);
+  transition: width 0.3s ease-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Enhanced Card Hover Effects */
+.card-hover {
+  @apply transition-all duration-300 ease-out hover:shadow-2xl hover:scale-105 hover:-translate-y-2;
+}
+
+.card-interactive {
+  @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-out transform hover:scale-105 hover:-translate-y-1 cursor-pointer;
+}
+
+/* Enhanced Category Buttons */
+.category-btn {
+  @apply px-6 py-3 rounded-full font-medium transition-all duration-300 ease-out transform hover:scale-105 shadow-md hover:shadow-lg;
+}
+
+.category-btn-active {
+  @apply bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 shadow-lg;
+}
+
+.category-btn-inactive {
+  @apply bg-gray-700 text-white hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-500 hover:text-gray-900;
+}
+
+/* Enhanced Social Links */
+.social-link {
+  @apply flex items-center space-x-2 text-gray-300 hover:text-white transition-all duration-300 ease-out transform hover:scale-105 hover:translate-x-2;
+}
+
+/* Enhanced Gallery Items */
+.gallery-item {
+  @apply group cursor-pointer transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2;
+}
+
+.gallery-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 ease-out;
+}
+
+/* Enhanced Branch Cards */
+.branch-card {
+  @apply bg-gradient-to-br p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-out transform hover:scale-105 hover:-translate-y-2;
+}
+
+/* Enhanced Service Cards */
+.service-card {
+  @apply bg-gray-800 border border-gray-600 rounded-2xl p-8 hover:shadow-2xl hover:border-orange-500 transition-all duration-300 ease-out transform hover:scale-105 hover:-translate-y-2;
+}
+
+/* Pulse Animation for Important Elements */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(249, 115, 22, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.8), 0 0 30px rgba(249, 115, 22, 0.4);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+/* Smooth Loading Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
 /* Hero background image */
 .hero-background {
   background-image: url('/background pic.jpg');

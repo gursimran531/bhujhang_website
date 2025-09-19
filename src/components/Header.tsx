@@ -46,7 +46,7 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`transition-colors duration-200 font-medium ${
+                className={`nav-link ${
                   isActive(item.path)
                     ? 'text-yellow-400 border-b-2 border-yellow-400'
                     : 'text-white hover:text-yellow-400'
@@ -63,24 +63,24 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-white" />
+              <X className="w-6 h-6 text-white transition-transform duration-200 hover:scale-110" />
             ) : (
-              <Menu className="w-6 h-6 text-white" />
+              <Menu className="w-6 h-6 text-white transition-transform duration-200 hover:scale-110" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-white border-opacity-20">
+          <nav className="md:hidden py-4 border-t border-white border-opacity-20 fade-in-up">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block py-2 px-4 transition-colors duration-200 ${
+                className={`block py-3 px-4 rounded-lg mx-2 transition-all duration-300 ${
                   isActive(item.path)
-                    ? 'text-yellow-400 bg-white bg-opacity-10'
-                    : 'text-white hover:text-yellow-400 hover:bg-white hover:bg-opacity-5'
+                    ? 'text-yellow-400 bg-white bg-opacity-20 shadow-md'
+                    : 'text-white hover:text-yellow-400 hover:bg-white hover:bg-opacity-10 hover:shadow-md transform hover:translate-x-2'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

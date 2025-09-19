@@ -121,10 +121,10 @@ const Gallery = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${
+              className={`category-btn ${
                 selectedCategory === category.id
-                  ? 'bg-yellow-500 text-gray-900'
-                  : 'bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900'
+                  ? 'category-btn-active'
+                  : 'category-btn-inactive'
               }`}
             >
               {category.label}
@@ -137,29 +137,29 @@ const Gallery = () => {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="group cursor-pointer"
+              className="gallery-item"
               onClick={() => setSelectedMedia(item)}
             >
-              <div className="relative overflow-hidden rounded-lg bg-gray-200 aspect-square">
+              <div className="relative overflow-hidden rounded-2xl bg-gray-200 aspect-square shadow-lg hover:shadow-2xl transition-all duration-300">
                 <img
                   src={item.src}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
                 />
                 {item.type === 'video' && (
                   <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                    <Play className="w-12 h-12 text-white" />
+                    <Play className="w-12 h-12 text-white transform group-hover:scale-125 transition-transform duration-300" />
                   </div>
                 )}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-200">
-                  <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <div className="gallery-overlay">
+                  <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
                     <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
                     <p className="text-sm text-gray-200">{item.description}</p>
                   </div>
                 </div>
               </div>
               <div className="mt-4">
-                <div className="flex items-center text-sm text-gray-500 space-x-4">
+                <div className="flex items-center text-sm text-gray-400 space-x-4">
                   <div className="flex items-center">
                     <MapPin className="w-4 h-4 mr-1" />
                     {item.location}
@@ -181,14 +181,14 @@ const Gallery = () => {
               <div className="relative">
                 <button
                   onClick={() => setSelectedMedia(null)}
-                  className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+                  className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-all duration-200 transform hover:scale-110"
                 >
                   <X className="w-8 h-8" />
                 </button>
                 <img
                   src={selectedMedia.src}
                   alt={selectedMedia.title}
-                  className="w-full h-auto rounded-lg"
+                  className="w-full h-auto rounded-2xl shadow-2xl"
                 />
                 <div className="mt-4 text-white">
                   <h3 className="text-2xl font-bold mb-2">{selectedMedia.title}</h3>
@@ -210,7 +210,7 @@ const Gallery = () => {
         )}
 
         {/* Call to Action */}
-        <div className="mt-16 text-center bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-lg">
+        <div className="mt-16 text-center bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold mb-4">Want to Be Part of Our Story?</h3>
           <p className="text-orange-100 mb-6">
             Join our community events and training sessions. Follow us to see more updates!
@@ -218,13 +218,13 @@ const Gallery = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-out"
             >
               Get Involved
             </a>
             <a
               href="/services"
-              className="border-2 border-white hover:bg-white hover:text-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="btn-secondary"
             >
               Our Programs
             </a>
