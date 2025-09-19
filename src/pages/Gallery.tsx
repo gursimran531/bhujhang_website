@@ -10,7 +10,7 @@ const Gallery = () => {
     { id: 'gatka', label: 'Gatka Training' },
     { id: 'events', label: 'Cultural Events' },
     { id: 'kirtan', label: 'Nagar Kirtan' },
-    { id: 'ceremonies', label: 'Ceremonies' }
+    { id: 'jathedar', label: 'Jathedar' }
   ];
 
   // Using Pexels stock photos for demonstration
@@ -58,7 +58,7 @@ const Gallery = () => {
     {
       id: 5,
       type: 'image',
-      category: 'gatka',
+      category: 'jathedar',
       src: '/1.jpg',
       title: 'Traditional Gatka Training',
       description: 'Jathedar Jaspreet Singh and Jathedar Gursimarpreet Singh',
