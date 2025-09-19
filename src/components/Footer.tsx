@@ -12,8 +12,7 @@ const Footer = () => {
               <img 
                 src="/logo.png" 
                 alt="Bhujhang Jatha Logo" 
-               className="w-12 h-12 rounded-full object-contain shadow-lg"
-               style={{ imageRendering: 'crisp-edges' }}
+               className="w-12 h-12 rounded-full object-cover shadow-lg"
               />
               <div>
                <h3 className="text-xl font-bold">Bhujhang Jatha</h3>
