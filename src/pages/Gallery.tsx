@@ -19,7 +19,7 @@ const Gallery = () => {
       id: 1,
       type: 'image',
       category: 'gatka',
-      src: '/1.jpg',
+      src: '/8.jpg',
       title: 'Traditional Gatka Training',
       description: 'Master demonstrating traditional Gatka sword techniques',
       location: 'Nawanshahr, India',
@@ -59,9 +59,9 @@ const Gallery = () => {
       id: 5,
       type: 'image',
       category: 'gatka',
-      src: '/3.jpg',
+      src: '/1.jpg',
       title: 'Traditional Gatka Training',
-      description: 'Master demonstrating traditional Gatka sword techniques',
+      description: 'Jathedar Jaspreet Singh and Jathedar Gursimarpreet Singh',
       location: 'Nawanshahr, India',
       date: '2024-01-15'
     }
