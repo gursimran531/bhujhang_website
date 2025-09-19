@@ -36,7 +36,7 @@ const Header = () => {
             />
             <div>
              <h1 className="text-2xl font-bold text-white">Bhujhang Jatha</h1>
-              <p className="text-sm text-yellow-400">Gatka</p>
+              <p className="text-sm text-yellow-400">Gatka Warriors</p>
             </div>
           </Link>
 
