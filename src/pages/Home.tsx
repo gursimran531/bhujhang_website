@@ -189,15 +189,6 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="py-16 relative overflow-hidden bg-orange-500">
-        {/* Grid overlay */}
-        <div className="absolute inset-0 opacity-30" style={{
-          backgroundImage: `
-            linear-gradient(rgba(22, 19, 98, 0.4) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(22, 19, 98, 0.4) 1px, transparent 1px)
-          `,
-          backgroundSize: '30px 30px'
-        }}></div>
-        
         {/* Saffron blur effects */}
         <div className="absolute top-10 left-20 w-80 h-80 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 right-10 w-60 h-60 bg-gradient-to-l from-orange-500/15 to-yellow-500/15 rounded-full blur-xl"></div>
