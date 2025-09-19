@@ -60,13 +60,17 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 relative">
+        {/* Saffron blur effects */}
+        <div className="absolute top-10 left-20 w-80 h-80 bg-gradient-to-r from-orange-400/15 to-yellow-400/15 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 right-10 w-60 h-60 bg-gradient-to-l from-orange-500/10 to-yellow-500/10 rounded-full blur-xl"></div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Why Choose Bhujhang Jatha?
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white max-w-2xl mx-auto">
               We are dedicated to preserving and promoting Sikh martial arts traditions while serving our global community
             </p>
           </div>
