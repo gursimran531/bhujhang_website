@@ -188,9 +188,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 relative overflow-hidden" style={{
-        background: 'linear-gradient(135deg, #FF8C00 0%, #FFA500 50%, #FFB347 100%)'
-      }}>
+      <section className="py-16 relative overflow-hidden">
         {/* Grid overlay */}
         <div className="absolute inset-0 opacity-30" style={{
           backgroundImage: `
