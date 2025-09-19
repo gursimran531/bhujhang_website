@@ -142,27 +142,6 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* India Branch */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-lg">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-2xl font-bold">IN</span>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Nawanshahr, Punjab</h3>
-                <p className="text-orange-600 font-semibold mb-4">ਭੁਜੰਗ ਜੱਥਾ</p>
-                <p className="text-gray-700 mb-6">
-                  Our founding location in the heart of Punjab, where traditional Gatka and Sikh martial arts have been practiced for generations.
-                </p>
-                <Link
-                  to="/branches"
-                  className="text-orange-600 hover:text-orange-700 font-semibold flex items-center justify-center"
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-1" />
-                </Link>
-              </div>
-            </div>
-
             {/* Canada Branch */}
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
               <div className="text-center">
@@ -177,6 +156,27 @@ const Home = () => {
                 <Link
                   to="/branches"
                   className="text-blue-600 hover:text-blue-700 font-semibold flex items-center justify-center"
+                >
+                  Learn More
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* India Branch */}
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-lg">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">IN</span>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Nawanshahr, Punjab</h3>
+                <p className="text-orange-600 font-semibold mb-4">ਭੁਜੰਗ ਜੱਥਾ</p>
+                <p className="text-gray-700 mb-6">
+                  Our founding location in the heart of Punjab, where traditional Gatka and Sikh martial arts have been practiced for generations.
+                </p>
+                <Link
+                  to="/branches"
+                  className="text-orange-600 hover:text-orange-700 font-semibold flex items-center justify-center"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4 ml-1" />
