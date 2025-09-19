@@ -4,7 +4,7 @@ import { Shield, Heart, BookOpen, Users } from 'lucide-react';
 const About = () => {
   const values = [
     {
-      icon: <Shield className="w-8 h-8 text-yellow-500" />,
+      icon: <span className="text-2xl">⚔️</span>,
       title: "Tradition",
       description: "Preserving authentic Sikh martial arts as passed down through generations."
     },
