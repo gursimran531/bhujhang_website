@@ -19,9 +19,9 @@ const Gallery = () => {
       id: 1,
       type: 'image',
       category: 'gatka',
-      src: 'https://images.pexels.com/photos/7034274/pexels-photo-7034274.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Traditional Gatka Training',
-      description: 'Master demonstrating traditional Gatka sword techniques',
+      description: 'Students practicing traditional sword techniques',
       location: 'Nawanshahr, India',
       date: '2024-01-15'
     },
@@ -29,9 +29,9 @@ const Gallery = () => {
       id: 2,
       type: 'image',
       category: 'events',
-      src: 'https://images.pexels.com/photos/8553873/pexels-photo-8553873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Cultural Celebration',
-      description: 'Traditional Sikh ceremony with community participation',
+      description: 'Community gathering during Vaisakhi celebration',
       location: 'Brampton, Canada',
       date: '2024-04-13'
     },
@@ -39,9 +39,9 @@ const Gallery = () => {
       id: 3,
       type: 'image',
       category: 'kirtan',
-      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/6394567/pexels-photo-6394567.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Nagar Kirtan Procession',
-      description: 'Community gathering for spiritual celebration',
+      description: 'Annual Nagar Kirtan bringing community together',
       location: 'Nawanshahr, India',
       date: '2024-03-20'
     },
@@ -49,9 +49,9 @@ const Gallery = () => {
       id: 4,
       type: 'image',
       category: 'gatka',
-      src: 'https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/7034274/pexels-photo-7034274.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Youth Gatka Class',
-      description: 'Traditional martial arts training session',
+      description: 'Young students learning martial arts discipline',
       location: 'Brampton, Canada',
       date: '2024-02-10'
     },
@@ -59,9 +59,9 @@ const Gallery = () => {
       id: 5,
       type: 'image',
       category: 'ceremonies',
-      src: 'https://images.pexels.com/photos/6394567/pexels-photo-6394567.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/8553873/pexels-photo-8553873.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Spiritual Ceremony',
-      description: 'Traditional religious gathering with community',
+      description: 'Religious ceremony with traditional customs',
       location: 'Nawanshahr, India',
       date: '2024-01-26'
     },
@@ -69,9 +69,9 @@ const Gallery = () => {
       id: 6,
       type: 'image',
       category: 'events',
-      src: 'https://images.pexels.com/photos/8553873/pexels-photo-8553873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Community Workshop',
-      description: 'Traditional Sikh ceremony with community participation',
+      description: 'Educational workshop on Sikh history and culture',
       location: 'Brampton, Canada',
       date: '2024-03-05'
     }
@@ -79,7 +79,7 @@ const Gallery = () => {
 
   const filteredItems = selectedCategory === 'all' 
     ? mediaItems 
-      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
+    : mediaItems.filter(item => item.category === selectedCategory);
 
   return (
     <div className="min-h-screen py-12 text-white relative">
