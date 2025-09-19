@@ -55,7 +55,7 @@ const Branches = () => {
       },
       hours: "Mon-Fri 6:00 PM - 9:00 PM, Weekends 9:00 AM - 5:00 PM",
       established: "2010",
-      students: "150+",
+      established: "2022",
       bgColor: "from-blue-50 to-blue-100",
       accentColor: "blue-600"
     }
@@ -190,15 +190,9 @@ const Branches = () => {
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-gray-200">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="text-center">
-                        <p className={`text-2xl font-bold text-${branch.accentColor}`}>{branch.established}</p>
-                        <p className="text-gray-600 text-sm">Established</p>
-                      </div>
-                      <div className="text-center">
-                        <p className={`text-2xl font-bold text-${branch.accentColor}`}>{branch.students}</p>
-                        <p className="text-gray-600 text-sm">Students</p>
-                      </div>
+                    <div className="text-center">
+                      <p className={`text-2xl font-bold text-${branch.accentColor}`}>{branch.established}</p>
+                      <p className="text-gray-600 text-sm">Established</p>
                     </div>
                   </div>
 
