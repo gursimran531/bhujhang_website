@@ -30,9 +30,6 @@ const Home = () => {
     <div className="min-h-screen relative">
       {/* Hero Section */}
       <section className="relative text-white py-20">
-        <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm rounded-3xl mx-4 sm:mx-8"></div>
-        <div className="absolute top-10 left-20 w-80 h-80 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-20 w-60 h-60 bg-gradient-to-r from-yellow-400/15 to-orange-500/15 rounded-full blur-2xl"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -63,9 +60,7 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 relative">
-        <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl mx-4 sm:mx-8"></div>
-        <div className="absolute top-5 right-10 w-40 h-40 bg-gradient-to-r from-orange-400/10 to-yellow-400/10 rounded-full blur-xl"></div>
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -88,9 +83,7 @@ const Home = () => {
       </section>
 
       {/* Branches Section */}
-      <section className="py-16 relative">
-        <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl mx-4 sm:mx-8"></div>
-        <div className="absolute bottom-5 left-10 w-52 h-52 bg-gradient-to-r from-yellow-400/15 to-orange-400/15 rounded-full blur-2xl"></div>
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -147,9 +140,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 relative text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/30 to-orange-700/30 backdrop-blur-sm rounded-3xl mx-4 sm:mx-8"></div>
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 rounded-full blur-3xl"></div>
+      <section className="py-16 bg-gradient-to-r from-orange-600 to-orange-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Begin Your Journey?

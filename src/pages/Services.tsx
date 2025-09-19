@@ -35,13 +35,9 @@ const Services = () => {
 
   return (
     <div className="min-h-screen py-12 text-white relative">
-      <div className="absolute top-5 left-15 w-80 h-80 bg-gradient-to-r from-orange-400/15 to-yellow-400/15 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 right-15 w-60 h-60 bg-gradient-to-r from-yellow-400/10 to-orange-500/10 rounded-full blur-2xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 relative">
-          <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl -mx-8 -my-8"></div>
-          <div className="relative py-8">
+        <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="text-yellow-400">Services</span>
           </h1>
@@ -49,13 +45,10 @@ const Services = () => {
             We offer comprehensive services to support and celebrate Sikh culture, 
             tradition, and spiritual growth in communities across India and Canada.
           </p>
-          </div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 relative">
-          <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-sm rounded-3xl -mx-4 -my-8"></div>
-          <div className="relative py-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
             <div key={index} className="bg-gray-800 border border-gray-600 rounded-lg p-8 hover:shadow-lg transition-shadow duration-200">
               <div className="flex items-start space-x-4 mb-6">
@@ -81,13 +74,10 @@ const Services = () => {
               </div>
             </div>
           ))}
-          </div>
         </div>
 
         {/* Branch-Specific Information */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 relative">
-          <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl -mx-4 -my-8"></div>
-          <div className="relative py-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
               <MapPin className="w-6 h-6 text-orange-600 mr-2" />
@@ -144,13 +134,10 @@ const Services = () => {
               </div>
             </div>
           </div>
-          </div>
         </div>
 
         {/* Contact CTA */}
-        <div className="relative text-white p-8 rounded-lg text-center">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/30 to-orange-700/30 backdrop-blur-sm rounded-3xl"></div>
-          <div className="relative">
+        <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-lg text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Book Our Services?</h3>
           <p className="text-orange-100 mb-6">
             Contact us to discuss your requirements and learn how we can serve your community
@@ -169,7 +156,6 @@ const Services = () => {
               <Phone className="w-4 h-4 mr-2" />
               Call Now
             </a>
-          </div>
           </div>
         </div>
       </div>

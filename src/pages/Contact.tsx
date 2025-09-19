@@ -62,13 +62,9 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen py-12 text-white relative">
-      <div className="absolute top-10 left-15 w-80 h-80 bg-gradient-to-r from-orange-400/15 to-yellow-400/15 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-64 h-64 bg-gradient-to-r from-yellow-400/10 to-orange-500/10 rounded-full blur-2xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 relative">
-          <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl -mx-8 -my-8"></div>
-          <div className="relative py-8">
+        <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Contact <span className="text-yellow-400">Us</span>
           </h1>
@@ -76,12 +72,9 @@ const Contact = () => {
             Ready to start your journey with Bhujhang Jatha? Get in touch with us to learn more 
             about our services, schedule training, or book our cultural programs.
           </p>
-          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
-          <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-sm rounded-3xl -mx-4 -my-8"></div>
-          <div className="relative py-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-white mb-6">Send Us a Message</h2>
@@ -270,7 +263,6 @@ const Contact = () => {
                 <p>• Emergency cultural events: Immediate assistance</p>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

@@ -63,13 +63,9 @@ const Branches = () => {
 
   return (
     <div className="min-h-screen py-12 text-white relative">
-      <div className="absolute top-5 left-10 w-72 h-72 bg-gradient-to-r from-orange-400/15 to-yellow-400/15 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 right-20 w-56 h-56 bg-gradient-to-r from-yellow-400/10 to-orange-500/10 rounded-full blur-2xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 relative">
-          <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl -mx-8 -my-8"></div>
-          <div className="relative py-8">
+        <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="text-yellow-400">Branches</span>
           </h1>
@@ -77,13 +73,10 @@ const Branches = () => {
             Bhujhang Jatha operates across two continents, bringing authentic Sikh martial arts 
             tradition to communities in India and Canada.
           </p>
-          </div>
         </div>
 
         {/* Global Impact Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 relative">
-          <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-sm rounded-3xl -mx-4 -my-8"></div>
-          <div className="relative py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
           <div className="text-center">
             <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Globe className="w-8 h-8 text-orange-600" />
@@ -112,13 +105,10 @@ const Branches = () => {
             <div className="text-3xl font-bold text-white">100+</div>
             <div className="text-gray-300">Events Organized</div>
           </div>
-          </div>
         </div>
 
         {/* Branch Details */}
-        <div className="space-y-12 relative">
-          <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-3xl -mx-4 -my-8"></div>
-          <div className="relative py-8 space-y-12">
+        <div className="space-y-12">
           {branchData.map((branch, index) => (
             <div key={index} className={`bg-gradient-to-br ${branch.bgColor} p-8 rounded-lg`}>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -219,13 +209,10 @@ const Branches = () => {
               </div>
             </div>
           ))}
-          </div>
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 relative text-white p-8 rounded-lg text-center">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/30 to-orange-700/30 backdrop-blur-sm rounded-3xl"></div>
-          <div className="relative">
+        <div className="mt-16 bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-lg text-center">
           <h3 className="text-2xl font-bold mb-4">Visit Our Branches</h3>
           <p className="text-orange-100 mb-6">
             We welcome visitors to both our branches. Come experience authentic Sikh martial arts training 
@@ -244,7 +231,6 @@ const Branches = () => {
             >
               Learn About Programs
             </a>
-          </div>
           </div>
         </div>
       </div>
