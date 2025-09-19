@@ -87,13 +87,17 @@ const Home = () => {
       </section>
 
       {/* Branches Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 relative">
+        {/* Saffron blur effects */}
+        <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-r from-orange-400/15 to-yellow-400/15 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-10 right-20 w-60 h-60 bg-gradient-to-l from-orange-500/10 to-yellow-500/10 rounded-full blur-xl"></div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Our Global Presence
             </h2>
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-white">
               Serving Sikh communities across two continents
             </p>
           </div>
