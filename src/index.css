@@ -90,6 +90,9 @@ body {
 .hero-background {
   background-image: url('/background pic.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: optimize-quality;
 }

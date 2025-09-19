@@ -31,7 +31,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-background relative text-white py-20">
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          backgroundImage: "url('/background pic.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center bottom',
+          backgroundRepeat: 'no-repeat',
+          imageRendering: 'crisp-edges'
+        }}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
