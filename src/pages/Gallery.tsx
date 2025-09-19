@@ -69,9 +69,9 @@ const Gallery = () => {
       id: 6,
       type: 'image',
       category: 'events',
-      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/8553873/pexels-photo-8553873.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Community Workshop',
-      description: 'Educational workshop on Sikh history and culture',
+      description: 'Traditional Sikh ceremony with community participation',
       location: 'Brampton, Canada',
       date: '2024-03-05'
     }
@@ -79,7 +79,7 @@ const Gallery = () => {
 
   const filteredItems = selectedCategory === 'all' 
     ? mediaItems 
-    : mediaItems.filter(item => item.category === selectedCategory);
+      src: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800',
 
   return (
     <div className="min-h-screen py-12 text-white relative">
