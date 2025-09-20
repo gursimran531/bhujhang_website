@@ -9,7 +9,7 @@ I recently ran a little experiment, and it turned out to be **super cool**. I he
 - Used **AI prompts** to design and generate the entire website.  
 - Total prompts needed: **20** (yep, it really was that few!).  
 - Total time: **under 4 hours** from start to finish.  
-- Hosted the website on **Netlify** and connected it to a purchased domain: [bhujhanjatha.com](https://bhujhanjatha.com).  
+- Hosted the website on **Netlify** and connected it to a purchased domain: [bhujhangjatha.com](https://bhujhangjatha.com).  
 - The result: a **sleek, professional-looking website** perfect for a small business wanting an online presence.
 
 ## Tools & Tech
@@ -32,7 +32,7 @@ I recently ran a little experiment, and it turned out to be **super cool**. I he
 
 ## Check It Out
 
-Visit the live site here: [bhujhanjatha.com](https://bhujhanjatha.com)
+Visit the live site here: [bhujhangjatha.com](https://bhujhangjatha.com)
 
 ---
 
